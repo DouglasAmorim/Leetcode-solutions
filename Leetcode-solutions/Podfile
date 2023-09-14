@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '16.0'
+
+source 'https://cdn.cocoapods.org/'
+
+def shared_pods
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+end
+
+target 'Leetcode-solutions' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  shared_pods
+  # Pods for Leetcode-solutions
+
+  target 'Leetcode-solutionsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Leetcode-solutionsUITests' do
+    # Pods for testing
+  end
+
+end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AE3FFD69016FEF64FB2CC0D /* Pods_Leetcode_solutionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39FB84D69C75F1A60682712 /* Pods_Leetcode_solutionsTests.framework */; };
+		36A4070FB7F726354235B536 /* Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D989BD09E4A4C805DC3E2866 /* Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework */; };
+		AFCAFC25F984F0D8A6DC7AD8 /* Pods_Leetcode_solutions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9566961E4D3833889CEF350 /* Pods_Leetcode_solutions.framework */; };
 		E862778E2AB34982002120F4 /* Leetcode_solutionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862778D2AB34982002120F4 /* Leetcode_solutionsApp.swift */; };
 		E86277902AB34982002120F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862778F2AB34982002120F4 /* ContentView.swift */; };
 		E86277922AB34983002120F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86277912AB34983002120F4 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 		E86277BC2AB36693002120F4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277BB2AB36693002120F4 /* CustomButton.swift */; };
 		E86277BE2AB37446002120F4 /* ProblemSolutionExplained.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277BD2AB37446002120F4 /* ProblemSolutionExplained.swift */; };
 		E86277C12AB37BFC002120F4 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277C02AB37BFC002120F4 /* LongestSubstring.swift */; };
+		E8E4481D2AB3B5F5009FC40C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8E4481C2AB3B5F5009FC40C /* GoogleService-Info.plist */; };
+		E8E448202AB3B821009FC40C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4481F2AB3B821009FC40C /* AppDelegate.swift */; };
+		E8E448222AB3B8D1009FC40C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E448212AB3B8D1009FC40C /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77618ABD23A4685C3BE2C1D6 /* Pods-Leetcode-solutions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leetcode-solutions.debug.xcconfig"; path = "Target Support Files/Pods-Leetcode-solutions/Pods-Leetcode-solutions.debug.xcconfig"; sourceTree = "<group>"; };
+		A39FB84D69C75F1A60682712 /* Pods_Leetcode_solutionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leetcode_solutionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13B7A7CE980E19A72312484 /* Pods-Leetcode-solutions-Leetcode-solutionsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leetcode-solutions-Leetcode-solutionsUITests.release.xcconfig"; path = "Target Support Files/Pods-Leetcode-solutions-Leetcode-solutionsUITests/Pods-Leetcode-solutions-Leetcode-solutionsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B9566961E4D3833889CEF350 /* Pods_Leetcode_solutions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leetcode_solutions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA15E523391E7113F206BC4D /* Pods-Leetcode-solutions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leetcode-solutions.release.xcconfig"; path = "Target Support Files/Pods-Leetcode-solutions/Pods-Leetcode-solutions.release.xcconfig"; sourceTree = "<group>"; };
+		C268AC16EF606482F6838E45 /* Pods-Leetcode-solutions-Leetcode-solutionsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leetcode-solutions-Leetcode-solutionsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Leetcode-solutions-Leetcode-solutionsUITests/Pods-Leetcode-solutions-Leetcode-solutionsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE4F1BF19A40CE151D1015A5 /* Pods-Leetcode-solutionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leetcode-solutionsTests.release.xcconfig"; path = "Target Support Files/Pods-Leetcode-solutionsTests/Pods-Leetcode-solutionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		D989BD09E4A4C805DC3E2866 /* Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E862778A2AB34982002120F4 /* Leetcode-solutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leetcode-solutions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E862778D2AB34982002120F4 /* Leetcode_solutionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode_solutionsApp.swift; sourceTree = "<group>"; };
 		E862778F2AB34982002120F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +64,10 @@
 		E86277BB2AB36693002120F4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E86277BD2AB37446002120F4 /* ProblemSolutionExplained.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSolutionExplained.swift; sourceTree = "<group>"; };
 		E86277C02AB37BFC002120F4 /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
+		E8E4481C2AB3B5F5009FC40C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8E4481F2AB3B821009FC40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8E448212AB3B8D1009FC40C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDB7C30FC15F5CF41CA9CA70 /* Pods-Leetcode-solutionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leetcode-solutionsTests.debug.xcconfig"; path = "Target Support Files/Pods-Leetcode-solutionsTests/Pods-Leetcode-solutionsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFCAFC25F984F0D8A6DC7AD8 /* Pods_Leetcode_solutions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AE3FFD69016FEF64FB2CC0D /* Pods_Leetcode_solutionsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +91,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A4070FB7F726354235B536 /* Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25ED9B6222D45D4CA251B89A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77618ABD23A4685C3BE2C1D6 /* Pods-Leetcode-solutions.debug.xcconfig */,
+				BA15E523391E7113F206BC4D /* Pods-Leetcode-solutions.release.xcconfig */,
+				C268AC16EF606482F6838E45 /* Pods-Leetcode-solutions-Leetcode-solutionsUITests.debug.xcconfig */,
+				B13B7A7CE980E19A72312484 /* Pods-Leetcode-solutions-Leetcode-solutionsUITests.release.xcconfig */,
+				FDB7C30FC15F5CF41CA9CA70 /* Pods-Leetcode-solutionsTests.debug.xcconfig */,
+				CE4F1BF19A40CE151D1015A5 /* Pods-Leetcode-solutionsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		39464E30CE94DEF549ECE208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9566961E4D3833889CEF350 /* Pods_Leetcode_solutions.framework */,
+				D989BD09E4A4C805DC3E2866 /* Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework */,
+				A39FB84D69C75F1A60682712 /* Pods_Leetcode_solutionsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E86277812AB34982002120F4 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +128,8 @@
 				E862779D2AB34983002120F4 /* Leetcode-solutionsTests */,
 				E86277A72AB34983002120F4 /* Leetcode-solutionsUITests */,
 				E862778B2AB34982002120F4 /* Products */,
+				25ED9B6222D45D4CA251B89A /* Pods */,
+				39464E30CE94DEF549ECE208 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +146,8 @@
 		E862778C2AB34982002120F4 /* Leetcode-solutions */ = {
 			isa = PBXGroup;
 			children = (
+				E8E4481E2AB3B816009FC40C /* App */,
+				E8E4481C2AB3B5F5009FC40C /* GoogleService-Info.plist */,
 				E86277BF2AB37BE5002120F4 /* Model */,
 				E86277B82AB36558002120F4 /* Components */,
 				E86277B72AB36534002120F4 /* Scenes */,
@@ -160,6 +208,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E8E4481E2AB3B816009FC40C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4481F2AB3B821009FC40C /* AppDelegate.swift */,
+				E8E448212AB3B8D1009FC40C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E86277AE2AB34983002120F4 /* Build configuration list for PBXNativeTarget "Leetcode-solutions" */;
 			buildPhases = (
+				26383F37AF246E2AB123996A /* [CP] Check Pods Manifest.lock */,
 				E86277862AB34982002120F4 /* Sources */,
 				E86277872AB34982002120F4 /* Frameworks */,
 				E86277882AB34982002120F4 /* Resources */,
+				FE0F5661334AA0BCDB99E5A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E86277B12AB34983002120F4 /* Build configuration list for PBXNativeTarget "Leetcode-solutionsTests" */;
 			buildPhases = (
+				F14C91E009C8B641EF74DD8C /* [CP] Check Pods Manifest.lock */,
 				E86277962AB34983002120F4 /* Sources */,
 				E86277972AB34983002120F4 /* Frameworks */,
 				E86277982AB34983002120F4 /* Resources */,
@@ -202,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E86277B42AB34983002120F4 /* Build configuration list for PBXNativeTarget "Leetcode-solutionsUITests" */;
 			buildPhases = (
+				4BB458E35C1C18D4D16567D9 /* [CP] Check Pods Manifest.lock */,
 				E86277A02AB34983002120F4 /* Sources */,
 				E86277A12AB34983002120F4 /* Frameworks */,
 				E86277A22AB34983002120F4 /* Resources */,
+				9C28B75FDB21C43C435D2BAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -266,6 +328,7 @@
 			files = (
 				E86277952AB34983002120F4 /* Preview Assets.xcassets in Resources */,
 				E86277922AB34983002120F4 /* Assets.xcassets in Resources */,
+				E8E4481D2AB3B5F5009FC40C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,11 +348,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26383F37AF246E2AB123996A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leetcode-solutions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BB458E35C1C18D4D16567D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leetcode-solutions-Leetcode-solutionsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C28B75FDB21C43C435D2BAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leetcode-solutions-Leetcode-solutionsUITests/Pods-Leetcode-solutions-Leetcode-solutionsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leetcode-solutions-Leetcode-solutionsUITests/Pods-Leetcode-solutions-Leetcode-solutionsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Leetcode-solutions-Leetcode-solutionsUITests/Pods-Leetcode-solutions-Leetcode-solutionsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F14C91E009C8B641EF74DD8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leetcode-solutionsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE0F5661334AA0BCDB99E5A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leetcode-solutions/Pods-Leetcode-solutions-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leetcode-solutions/Pods-Leetcode-solutions-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Leetcode-solutions/Pods-Leetcode-solutions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E86277862AB34982002120F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E448202AB3B821009FC40C /* AppDelegate.swift in Sources */,
+				E8E448222AB3B8D1009FC40C /* SceneDelegate.swift in Sources */,
 				E86277902AB34982002120F4 /* ContentView.swift in Sources */,
 				E86277C12AB37BFC002120F4 /* LongestSubstring.swift in Sources */,
 				E86277BE2AB37446002120F4 /* ProblemSolutionExplained.swift in Sources */,
@@ -447,6 +615,7 @@
 		};
 		E86277AF2AB34983002120F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77618ABD23A4685C3BE2C1D6 /* Pods-Leetcode-solutions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,6 +645,7 @@
 		};
 		E86277B02AB34983002120F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA15E523391E7113F206BC4D /* Pods-Leetcode-solutions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -505,6 +675,7 @@
 		};
 		E86277B22AB34983002120F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB7C30FC15F5CF41CA9CA70 /* Pods-Leetcode-solutionsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -525,6 +696,7 @@
 		};
 		E86277B32AB34983002120F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE4F1BF19A40CE151D1015A5 /* Pods-Leetcode-solutionsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +717,7 @@
 		};
 		E86277B52AB34983002120F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C268AC16EF606482F6838E45 /* Pods-Leetcode-solutions-Leetcode-solutionsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +736,7 @@
 		};
 		E86277B62AB34983002120F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B13B7A7CE980E19A72312484 /* Pods-Leetcode-solutions-Leetcode-solutionsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

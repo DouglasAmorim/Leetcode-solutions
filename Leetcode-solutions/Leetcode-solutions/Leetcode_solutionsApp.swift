@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Leetcode_solutionsApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     var body: some Scene {
         WindowGroup {
             ContentView()
