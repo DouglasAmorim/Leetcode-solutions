@@ -14,6 +14,8 @@
 		E862779F2AB34983002120F4 /* Leetcode_solutionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862779E2AB34983002120F4 /* Leetcode_solutionsTests.swift */; };
 		E86277A92AB34983002120F4 /* Leetcode_solutionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277A82AB34983002120F4 /* Leetcode_solutionsUITests.swift */; };
 		E86277AB2AB34983002120F4 /* Leetcode_solutionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277AA2AB34983002120F4 /* Leetcode_solutionsUITestsLaunchTests.swift */; };
+		E86277BC2AB36693002120F4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277BB2AB36693002120F4 /* CustomButton.swift */; };
+		E86277BE2AB37446002120F4 /* ProblemSolutionExplained.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277BD2AB37446002120F4 /* ProblemSolutionExplained.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		E86277A42AB34983002120F4 /* Leetcode-solutionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leetcode-solutionsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86277A82AB34983002120F4 /* Leetcode_solutionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode_solutionsUITests.swift; sourceTree = "<group>"; };
 		E86277AA2AB34983002120F4 /* Leetcode_solutionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode_solutionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E86277BB2AB36693002120F4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E86277BD2AB37446002120F4 /* ProblemSolutionExplained.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSolutionExplained.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +98,9 @@
 		E862778C2AB34982002120F4 /* Leetcode-solutions */ = {
 			isa = PBXGroup;
 			children = (
+				E86277B82AB36558002120F4 /* Components */,
+				E86277B72AB36534002120F4 /* Scenes */,
 				E862778D2AB34982002120F4 /* Leetcode_solutionsApp.swift */,
-				E862778F2AB34982002120F4 /* ContentView.swift */,
 				E86277912AB34983002120F4 /* Assets.xcassets */,
 				E86277932AB34983002120F4 /* Preview Content */,
 			);
@@ -125,6 +130,23 @@
 				E86277AA2AB34983002120F4 /* Leetcode_solutionsUITestsLaunchTests.swift */,
 			);
 			path = "Leetcode-solutionsUITests";
+			sourceTree = "<group>";
+		};
+		E86277B72AB36534002120F4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E862778F2AB34982002120F4 /* ContentView.swift */,
+				E86277BD2AB37446002120F4 /* ProblemSolutionExplained.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E86277B82AB36558002120F4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E86277BB2AB36693002120F4 /* CustomButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86277902AB34982002120F4 /* ContentView.swift in Sources */,
+				E86277BE2AB37446002120F4 /* ProblemSolutionExplained.swift in Sources */,
 				E862778E2AB34982002120F4 /* Leetcode_solutionsApp.swift in Sources */,
+				E86277BC2AB36693002120F4 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
