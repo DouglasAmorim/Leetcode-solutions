@@ -23,6 +23,7 @@
 		E8E4481D2AB3B5F5009FC40C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8E4481C2AB3B5F5009FC40C /* GoogleService-Info.plist */; };
 		E8E448202AB3B821009FC40C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4481F2AB3B821009FC40C /* AppDelegate.swift */; };
 		E8E448222AB3B8D1009FC40C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E448212AB3B8D1009FC40C /* SceneDelegate.swift */; };
+		E8E448252AB3B9D4009FC40C /* FirestoreStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E448242AB3B9D4009FC40C /* FirestoreStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		E8E4481C2AB3B5F5009FC40C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8E4481F2AB3B821009FC40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8E448212AB3B8D1009FC40C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8E448242AB3B9D4009FC40C /* FirestoreStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreStorage.swift; sourceTree = "<group>"; };
 		FDB7C30FC15F5CF41CA9CA70 /* Pods-Leetcode-solutionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leetcode-solutionsTests.debug.xcconfig"; path = "Target Support Files/Pods-Leetcode-solutionsTests/Pods-Leetcode-solutionsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				E86277C02AB37BFC002120F4 /* LongestSubstring.swift */,
+				E8E448242AB3B9D4009FC40C /* FirestoreStorage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8E448202AB3B821009FC40C /* AppDelegate.swift in Sources */,
+				E8E448252AB3B9D4009FC40C /* FirestoreStorage.swift in Sources */,
 				E8E448222AB3B8D1009FC40C /* SceneDelegate.swift in Sources */,
 				E86277902AB34982002120F4 /* ContentView.swift in Sources */,
 				E86277C12AB37BFC002120F4 /* LongestSubstring.swift in Sources */,

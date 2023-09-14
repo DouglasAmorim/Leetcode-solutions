@@ -58,7 +58,6 @@ struct ProblemSolutionExplained: View {
             }
         }
         .frame(maxWidth: .infinity)
-        
     }
 }
 

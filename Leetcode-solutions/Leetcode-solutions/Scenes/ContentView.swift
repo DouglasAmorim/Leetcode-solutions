@@ -28,6 +28,7 @@ struct ContentView: View {
                             .presentationDetents([.large])
                     }
                     .onTapGesture {
+                        FirestoreStorage.shared.retrieveLeetcodeSolution()
                         redirectToExplanation.toggle()
                     }
             }
