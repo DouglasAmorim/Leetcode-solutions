@@ -28,7 +28,9 @@ struct ContentView: View {
                             .presentationDetents([.large])
                     }
                     .onTapGesture {
-                        FirestoreStorage.shared.retrieveLeetcodeSolution()
+                        FirestoreStorage.shared.retrieveLeetcodeSolution( callback: { result in
+                            print("\(result.count)")
+                        })
                         redirectToExplanation.toggle()
                     }
             }

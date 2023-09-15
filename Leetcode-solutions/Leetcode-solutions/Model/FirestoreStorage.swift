@@ -17,17 +17,30 @@ class FirestoreStorage {
         self.db = Firestore.firestore()
     }
     
-    func retrieveLeetcodeSolution() {
+    func retrieveLeetcodeSolution(callback: @escaping ([LeetcodeProblems]) -> Void) {
+        var leetCodeProblems: [LeetcodeProblems] = []
+        
         db.collection("solutions").getDocuments() { (query, error) in
-            if let error = error {
+            if let query = query {
+                for document in query.documents {
+                    document.data()
+                    
+                    if let jsonData = try? JSONSerialization.data(withJSONObject: document.data(), options: .prettyPrinted) {
+                        if let leetcodeProblem = try? JSONDecoder().decode(LeetcodeProblems.self, from: jsonData) {
+                            leetCodeProblems.append(leetcodeProblem)
+                        }
+                    }
+                    
+                    print("document \(document.documentID) \(document.data())")
+                }
+                callback(leetCodeProblems)
+            } else if let error = error {
                 // TODO: Error
             } else {
-                if let query = query {
-                    for document in query.documents {
-                        print("document \(document.documentID) \(document.data())")
-                    }
-                }
+                // TODO: Someting went wrong
             }
         }
+        
+        
     }
 }

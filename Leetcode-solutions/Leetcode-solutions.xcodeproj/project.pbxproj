@@ -20,6 +20,7 @@
 		E86277BC2AB36693002120F4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277BB2AB36693002120F4 /* CustomButton.swift */; };
 		E86277BE2AB37446002120F4 /* ProblemSolutionExplained.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277BD2AB37446002120F4 /* ProblemSolutionExplained.swift */; };
 		E86277C12AB37BFC002120F4 /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86277C02AB37BFC002120F4 /* LongestSubstring.swift */; };
+		E87390882AB4BE3400651299 /* LeetcodeProblems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87390872AB4BE3400651299 /* LeetcodeProblems.swift */; };
 		E8E4481D2AB3B5F5009FC40C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8E4481C2AB3B5F5009FC40C /* GoogleService-Info.plist */; };
 		E8E448202AB3B821009FC40C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E4481F2AB3B821009FC40C /* AppDelegate.swift */; };
 		E8E448222AB3B8D1009FC40C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E448212AB3B8D1009FC40C /* SceneDelegate.swift */; };
@@ -65,6 +66,7 @@
 		E86277BB2AB36693002120F4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		E86277BD2AB37446002120F4 /* ProblemSolutionExplained.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSolutionExplained.swift; sourceTree = "<group>"; };
 		E86277C02AB37BFC002120F4 /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
+		E87390872AB4BE3400651299 /* LeetcodeProblems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeProblems.swift; sourceTree = "<group>"; };
 		E8E4481C2AB3B5F5009FC40C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8E4481F2AB3B821009FC40C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8E448212AB3B8D1009FC40C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				E86277C02AB37BFC002120F4 /* LongestSubstring.swift */,
 				E8E448242AB3B9D4009FC40C /* FirestoreStorage.swift */,
+				E87390872AB4BE3400651299 /* LeetcodeProblems.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				E8E448202AB3B821009FC40C /* AppDelegate.swift in Sources */,
 				E8E448252AB3B9D4009FC40C /* FirestoreStorage.swift in Sources */,
 				E8E448222AB3B8D1009FC40C /* SceneDelegate.swift in Sources */,
+				E87390882AB4BE3400651299 /* LeetcodeProblems.swift in Sources */,
 				E86277902AB34982002120F4 /* ContentView.swift in Sources */,
 				E86277C12AB37BFC002120F4 /* LongestSubstring.swift in Sources */,
 				E86277BE2AB37446002120F4 /* ProblemSolutionExplained.swift in Sources */,
