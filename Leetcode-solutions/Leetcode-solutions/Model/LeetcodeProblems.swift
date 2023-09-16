@@ -18,6 +18,7 @@ class LeetcodeProblems: Codable, Equatable, Identifiable {
     private var problemRuntime: String?
     private var testSolutionDescription: String?
     private var problemEnumCode: String?
+    var redirectPosition: Int = 0
     
     enum CodingKeys: String, CodingKey {
         case problemName

@@ -14,12 +14,17 @@ struct ProblemSolutionExplained: View {
     @State var solutionLabel: String
     @State var solutionCode: String
     @State var problemCode: String
+    @State var problemDifficulty: String
     @State private var str: String = ""
     
     func withSolutionForProblem() -> String {
         switch problemCode {
         case "1":
             return String(self.str.lengthOfLongestSubstring())
+            
+        case "2":
+            return String(MedianOfArrays.shared.findMedianSortedArrays([1,2,3,4,5], [5,6,7]))
+            
         default:
             return ""
         }
@@ -37,6 +42,11 @@ struct ProblemSolutionExplained: View {
                         Text(problemTitle)
                             .fontWeight(.heavy)
                             .font(.system(size: 24))
+                        
+                        Text("difficulty: \(problemDifficulty)")
+                            .fontWeight(.heavy)
+                            .font(.system(size: 24))
+                            .foregroundColor(.blue)
                     }
                     
                     VStack(alignment: .leading, spacing: 8) {
@@ -89,6 +99,7 @@ struct ProblemSolutionExplained_Previews: PreviewProvider {
                                  solutionDescription: "solution_description",
                                  solutionLabel: "solution_label",
                                  solutionCode: "solution_code",
-                                 problemCode: "1")
+                                 problemCode: "1",
+                                 problemDifficulty: "Easy")
     }
 }

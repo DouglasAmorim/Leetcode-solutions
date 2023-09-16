@@ -10,6 +10,7 @@
 		1AE3FFD69016FEF64FB2CC0D /* Pods_Leetcode_solutionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39FB84D69C75F1A60682712 /* Pods_Leetcode_solutionsTests.framework */; };
 		36A4070FB7F726354235B536 /* Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D989BD09E4A4C805DC3E2866 /* Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework */; };
 		AFCAFC25F984F0D8A6DC7AD8 /* Pods_Leetcode_solutions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9566961E4D3833889CEF350 /* Pods_Leetcode_solutions.framework */; };
+		E821CC372AB5F9C00049FF3C /* MedianOfArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821CC362AB5F9C00049FF3C /* MedianOfArrays.swift */; };
 		E862778E2AB34982002120F4 /* Leetcode_solutionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862778D2AB34982002120F4 /* Leetcode_solutionsApp.swift */; };
 		E86277902AB34982002120F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E862778F2AB34982002120F4 /* ContentView.swift */; };
 		E86277922AB34983002120F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86277912AB34983002120F4 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		C268AC16EF606482F6838E45 /* Pods-Leetcode-solutions-Leetcode-solutionsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leetcode-solutions-Leetcode-solutionsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Leetcode-solutions-Leetcode-solutionsUITests/Pods-Leetcode-solutions-Leetcode-solutionsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE4F1BF19A40CE151D1015A5 /* Pods-Leetcode-solutionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leetcode-solutionsTests.release.xcconfig"; path = "Target Support Files/Pods-Leetcode-solutionsTests/Pods-Leetcode-solutionsTests.release.xcconfig"; sourceTree = "<group>"; };
 		D989BD09E4A4C805DC3E2866 /* Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leetcode_solutions_Leetcode_solutionsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E821CC362AB5F9C00049FF3C /* MedianOfArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedianOfArrays.swift; sourceTree = "<group>"; };
 		E862778A2AB34982002120F4 /* Leetcode-solutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leetcode-solutions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E862778D2AB34982002120F4 /* Leetcode_solutionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leetcode_solutionsApp.swift; sourceTree = "<group>"; };
 		E862778F2AB34982002120F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				E86277C02AB37BFC002120F4 /* LongestSubstring.swift */,
 				E8E448242AB3B9D4009FC40C /* FirestoreStorage.swift */,
 				E87390872AB4BE3400651299 /* LeetcodeProblems.swift */,
+				E821CC362AB5F9C00049FF3C /* MedianOfArrays.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				E86277C12AB37BFC002120F4 /* LongestSubstring.swift in Sources */,
 				E86277BE2AB37446002120F4 /* ProblemSolutionExplained.swift in Sources */,
 				E862778E2AB34982002120F4 /* Leetcode_solutionsApp.swift in Sources */,
+				E821CC372AB5F9C00049FF3C /* MedianOfArrays.swift in Sources */,
 				E86277BC2AB36693002120F4 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

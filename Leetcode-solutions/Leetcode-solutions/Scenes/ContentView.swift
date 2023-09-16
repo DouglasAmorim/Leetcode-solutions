@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var redirectToExplanation: Bool = false
+    @State private var redirectToExplanation: [Bool] = []
     @State private var leetCodeProblems: [LeetcodeProblems] = []
     
     private func retrieveProblems() {
         FirestoreStorage.shared.retrieveLeetcodeSolution(callback: { problems in
+            var i: Int = 0
+            for problem in problems {
+                problem.redirectPosition = i
+                redirectToExplanation.append(false)
+                i += 1
+            }
+
             self.leetCodeProblems = problems
         })
     }
@@ -32,17 +39,19 @@ struct ContentView: View {
                         rowContent: problem.getProblemName() ?? "",
                         rowTintColor: .pink
                     )
-                    .sheet(isPresented: $redirectToExplanation) {
+                    .sheet(isPresented: $redirectToExplanation[problem.redirectPosition]) {
                         ProblemSolutionExplained(
                             problemTitle: problem.getProblemName() ?? "",
                             problemDescription: problem.getProblemDescription() ?? "",
                             solutionDescription: problem.getSolutionDescription() ?? "",
                             solutionLabel: problem.getTestSolutionDescription() ?? "",
                             solutionCode: problem.getProblemCode() ?? "",
-                            problemCode: problem.getProblemEnumCode() ?? "")
+                            problemCode: problem.getProblemEnumCode() ?? "",
+                            problemDifficulty: problem.getProblemDifficulty() ?? "")
                     }
                     .onTapGesture {
-                        redirectToExplanation.toggle()
+                        
+                        redirectToExplanation[problem.redirectPosition].toggle()
                     }
                 }
             }
