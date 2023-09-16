@@ -7,7 +7,8 @@
 
 import Foundation
 
-class LeetcodeProblems: Codable, Equatable {
+class LeetcodeProblems: Codable, Equatable, Identifiable {
+    let id = UUID()
     private var problemName: String?
     private var problemDescription: String?
     private var problemCode: String?
@@ -15,25 +16,31 @@ class LeetcodeProblems: Codable, Equatable {
     private var problemDifficulty: String?
     private var problemMemory: String?
     private var problemRuntime: String?
+    private var testSolutionDescription: String?
+    private var problemEnumCode: String?
     
     enum CodingKeys: String, CodingKey {
         case problemName
         case problemDescription
         case problemCode
+        case testSolutionDescription
         case solutionDescription
         case problemDifficulty
         case problemMemory
         case problemRuntime
+        case problemEnumCode
     }
     
     static func == (lhs: LeetcodeProblems, rhs: LeetcodeProblems) -> Bool {
         return lhs.problemName == rhs.problemCode &&
         lhs.problemDescription == rhs.problemDescription &&
         lhs.problemCode == rhs.problemCode &&
+        lhs.testSolutionDescription == rhs.testSolutionDescription &&
         lhs.solutionDescription == rhs.solutionDescription &&
         lhs.problemDifficulty == rhs.problemDifficulty &&
         lhs.problemMemory == rhs.problemMemory &&
-        lhs.problemRuntime == rhs.problemRuntime
+        lhs.problemRuntime == rhs.problemRuntime &&
+        lhs.problemEnumCode == rhs.problemEnumCode
     }
     
     // MARK: - PUBLIC METHODS
@@ -63,5 +70,13 @@ class LeetcodeProblems: Codable, Equatable {
     
     func getProblemRuntime() -> String? {
         return problemRuntime
+    }
+    
+    func getTestSolutionDescription() -> String? {
+        return testSolutionDescription
+    }
+    
+    func getProblemEnumCode() -> String? {
+        return problemEnumCode
     }
 }

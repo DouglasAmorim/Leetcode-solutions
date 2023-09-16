@@ -9,6 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var redirectToExplanation: Bool = false
+    @State private var leetCodeProblems: [LeetcodeProblems] = []
+    
+    private func retrieveProblems() {
+        FirestoreStorage.shared.retrieveLeetcodeSolution(callback: { problems in
+            self.leetCodeProblems = problems
+        })
+    }
     
     var body: some View {
         VStack(alignment: .center, spacing: 16) {
@@ -17,29 +24,34 @@ struct ContentView: View {
                 .fontDesign(.monospaced)
                 .font(.system(size: 24))
             
-            List {
-                CustomButton(rowLabel: "Problem", rowIcon: "ellipsis.curlybraces", rowContent: "Longest Subsring", rowTintColor: .pink)
+            NavigationStack {
+                List(leetCodeProblems) { problem in
+                    CustomButton(
+                        rowLabel: "Problem",
+                        rowIcon: "ellipsis.curlybraces",
+                        rowContent: problem.getProblemName() ?? "",
+                        rowTintColor: .pink
+                    )
                     .sheet(isPresented: $redirectToExplanation) {
                         ProblemSolutionExplained(
-                            problemTitle: "Longest Substring Without Repeating Characters",
-                            problemDescription: "Given a string 's', find the length of the longest subx    string without repeating characters.",
-                            solutionDescription: "First loop through each letter of the String 's'. \n Add each new letter in an 'Array' of non repeated letters. Check if the letter is already in array, if positive remove each letter from the position found until the beggining of the array. Always storage the max value between the size of array and the 'maxLenght' each time found a repeated letter. \n At the end, return de max value between 'maxLenght' and the size of the array.", solutionLabel: "The max Lenght of the text was: ")
-                            .presentationDragIndicator(.visible)
-                            .presentationDetents([.large])
+                            problemTitle: problem.getProblemName() ?? "",
+                            problemDescription: problem.getProblemDescription() ?? "",
+                            solutionDescription: problem.getSolutionDescription() ?? "",
+                            solutionLabel: problem.getTestSolutionDescription() ?? "",
+                            solutionCode: problem.getProblemCode() ?? "",
+                            problemCode: problem.getProblemEnumCode() ?? "")
                     }
                     .onTapGesture {
-                        FirestoreStorage.shared.retrieveLeetcodeSolution( callback: { result in
-                            print("\(result.count)")
-                        })
                         redirectToExplanation.toggle()
                     }
+                }
             }
-            .cornerRadius(24)
-                
-            
+            .padding(.leading, 24)
+            .padding(.trailing, 24)
         }
-        .padding(.leading, 24)
-        .padding(.trailing, 24)
+        .onAppear {
+            self.retrieveProblems()
+        }
     }
 }
 
